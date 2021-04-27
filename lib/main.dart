@@ -29,9 +29,23 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
-              child: CircleAvatar(
-                radius: 80.0,
-                backgroundImage: AssetImage('assets/profile.jpg'),
+              child: Column(
+                children: [
+                  CircleAvatar(
+                    radius: 80.0,
+                    backgroundImage: AssetImage('assets/profile.jpg'),
+                  ),
+                  SizedBox(height: 10.0),
+                  Text(
+                    'Software Developer',
+                    style: TextStyle(
+                      color: Colors.amberAccent[400],
+                      letterSpacing: 2.0,
+                      fontSize: 28.0,
+                      fontWeight: FontWeight.bold
+                    ),
+                  )
+                ],
               ),
             ),
             Divider(
@@ -50,7 +64,7 @@ class Home extends StatelessWidget {
               'Karan Agrawal',
               style: TextStyle(
                 letterSpacing: 2.0,
-                fontWeight: FontWeight.bold,
+                // fontWeight: FontWeight.bold,
                 fontSize: 24.0,
                 color: Colors.amberAccent[200]
               )
@@ -68,7 +82,7 @@ class Home extends StatelessWidget {
               'Dongargarh (CG)',
               style: TextStyle(
                 letterSpacing: 2.0,
-                fontWeight: FontWeight.bold,
+                // fontWeight: FontWeight.bold,
                 fontSize: 24.0,
                 color: Colors.amberAccent[200]
               )
